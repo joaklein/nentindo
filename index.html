@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="https://kit.fontawesome.com/dd510d8712.js"></script>
+    <title>Stardew Valley for Nentindo Switch</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-top">
+            <div class="nav-top-left">
+                <a class="nav-logo" href="#">Nentindo</a>
+                <div class="search-wrapper">
+                    <button id="search" class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Search games, hardware, news, etc</p>
+                    </button>
+                    <div class="category-wrapper">
+                        <div class="category-dropdown">
+                            <p>All categories</p><i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="category-list">
+                            <ul>
+                                <li>All categories</li>
+                                <li>Games</li>
+                                <li>Hardware</li>
+                                <li>Merchandise</li>
+                                <li>News & Events</li>
+                                <li>Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="dropdown-top" class="dropdown-top">
+                    <div id="dropdown-top-content" class="dropdown-wrapper">
+                        <div class="dropdown-top-top-left">
+                            <a class="nav-logo" href="#">Nentindo</a>
+                            <div class="search-wrapper">
+                                <button class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input id="input-search" type="text"
+                                        placeholder="Search games, hardware, news, etc"></input>
+                                </button>
+                                <div class="category-wrapper">
+                                    <div button class="category-dropdown">
+                                        <p>All categories</p><i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="category-list">
+                                        <ul>
+                                            <li>All categories</li>
+                                            <li>Games</li>
+                                            <li>Hardware</li>
+                                            <li>Merchandise</li>
+                                            <li>News & Events</li>
+                                            <li>Support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="dropdown-close-top">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-top-content">
+                            <div class="dropdown-top-section">
+                                <div class="dropdown-top-header">
+                                    <h4>Trending topics</h4>
+                                </div>
+                                <div class="dropdown-top-links">
+                                    <a href="#">Animal Crossing</a>
+                                    <a href="#">Nentindo Switch</a>
+                                    <a href="#">Nentindo Switch games</a>
+                                    <a href="#">Zelda games</a>
+                                    <a href="#">Pokémon games</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-top-section">
+                                <div class="dropdown-top-header">
+                                    <h4>Top store products</h4>
+                                </div>
+                                <div class="dropdown-top-products">
+                                    <div class="card-small">
+                                        <div class="card-img">
+                                            <img src="zelda.avif" alt="">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>The Legend of Zelda&trade;: Tears of the Kingdom</h4>
+                                            <p>Nentindo Switch</p>
+                                        </div>
+                                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                                    <div class="card-small">
+                                        <div class="card-img">
+                                            <img src="metroid.avif" alt="">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Metroid Prime&trade; Remastered</h4>
+                                            <p>Nentindo Switch</p>
+                                        </div>
+                                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                                    <div class="card-small">
+                                        <div class="card-img">
+                                            <img src="kirby.avif" alt="">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Kirby's Return to Dream Land&trade; Deluxe</h4>
+                                            <p>Nentindo Switch</p>
+                                        </div>
+                                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                                    <div class="card-small">
+                                        <div class="card-img">
+                                            <img src="fire_emblem.avif" alt="">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Fire Emblem&trade; Engage</h4>
+                                            <p>Nentindo Switch</p>
+                                        </div>
+                                        <div class="like"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-top-right">
+                <a href="#"><i class="fa-solid fa-clipboard-question"></i>Support</a>
+                <a href="#"><i class="fa-solid fa-heart"></i>Wish List</a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+                <a href="#"><i class="fa-solid fa-user"></i>Log In/Sign Up</a>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <div class="nav-bottom-link-wrapper">
+                <button id="link-store"><i class="fa-solid fa-cloud"></i>My Nentindo Store<i
+                        class="fa-solid fa-angle-down"></i></button>
+                <button id="link-games"><i class="fa-solid fa-up-down-left-right"></i>Games<i
+                        class="fa-solid fa-angle-down"></i></button>
+                <button id="link-switch"><i class="fa-solid fa-gamepad"></i>Nentindo Switch<i
+                        class="fa-solid fa-angle-down"></i></button>
+                <a href="#"><i class="fa-solid fa-comments"></i>News & Events<i class=""></i></a>
+                <button id="link-play"><i class="fa-solid fa-star"></i>Play Nentindo<i
+                        class="fa-solid fa-angle-down"></i></button>
+            </div>
+
+            <div id="dropdown-bottom" class="dropdown-bottom">
+                <div id="dropdown-store" class="dropdown-wrapper">
+                    <div class="dropdown-content">
+                        <div class="dropdown-store-title">
+                            <a href="#">
+                                <i class="fa-solid fa-cloud"></i>
+                                <h3>My Nentindo Store</h3>
+                            </a>
+                            <button class="dropdown-close">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </button>
+                            <div class="dropdown-store-title-border"></div>
+                        </div>
+                        <div class="dropdown-store-links-wrapper">
+                            <div class="dropdown-store-links-col">
+                                <a href="#"><i class="fa-solid fa-up-down-left-right"></i>Games</a>
+                                <a href="#">Nentindo Switch games</a>
+                                <a href="#">New releases</a>
+                                <a href="#">Sales & deals</a>
+                            </div>
+                            <div class="dropdown-store-links-col">
+                                <a href="#"><i class="fa-solid fa-gamepad"></i>Hardware</a>
+                                <a href="#">Nentindo Switch systems</a>
+                                <a href="#">Joy-Con & controllers</a>
+                                <a href="#">Cases & more</a>
+                                <a href="#">Replacement parts</a>
+                            </div>
+                            <div class="dropdown-store-links-col">
+                                <a href="#"><i class="fa-solid fa-shirt"></i>Merchandise</a>
+                                <a href="#">Apparel & accessories</a>
+                                <a href="#">Home & office</a>
+                                <a href="#">Plush</a>
+                                <a href="#">Toys</a>
+                            </div>
+                            <div class="dropdown-store-links-col">
+                                <a href="#"><i class="fa-solid fa-star"></i>Store exclusives</a>
+                                <a href="#">Exclusive products</a>
+                                <a href="#">My Nentindo rewards</a>
+                                <a href="#">Nentindo Switch Online offers</a>
+                            </div>
+                            <div class="dropdown-store-links-col">
+                                <a href="#"><i class="fa-solid fa-person-half-dress"></i>Characters</a>
+                                <a href="#">Animal Crossing</a>
+                                <a href="#">Splatoon</a>
+                                <a href="#">Mario</a>
+                                <a href="#">The Legend of Zelda</a>
+                            </div>
+                            <div class="dropdown-store-links-col">
+                                <a href="#"><i class="fa-solid fa-tag"></i>Sales & deals</a>
+                            </div>
+                        </div>
+                        <button class="button-fancy"><span>Shop all</span></button>
+                    </div>
+                </div>
+                <div id="dropdown-games" class="dropdown-wrapper">
+                    <div class="dropdown-content">
+                        <div class="dropdown-title">
+                            <button class="dropdown-close">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </button>
+                            <div class="dropdown-title-border"></div>
+                        </div>
+                        <div class="dropdown-links-wrapper">
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item" href="#">
+                                    <div class="dropdown-item-icon">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                    </div>
+                                    <p>Nentindo Switch games</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item" href="#">
+                                    <div class="dropdown-item-icon">
+                                        <i class="fa-solid fa-bullhorn"></i>
+                                    </div>
+                                    <p>New releases</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item" href="#">
+                                    <div class="dropdown-item-icon">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </div>
+                                    <p>Coming soon</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item" href="#">
+                                    <div class="dropdown-item-icon">
+                                        <i class="fa-solid fa-up-down-left-right"></i>
+                                    </div>
+                                    <p>Shop games</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dropdown-switch" class="dropdown-wrapper">
+                    <div class="dropdown-content">
+                        <div class="dropdown-title">
+                            <button class="dropdown-close">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </button>
+                            <div class="dropdown-title-border"></div>
+                        </div>
+                        <div class="dropdown-links-wrapper">
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item dropdown-item-switch" href="#">
+                                    <div class="dropdown-item-icon dropdown-item-switch-icon">
+                                        <img src="lineup.avif" alt="">
+                                    </div>
+                                    <p>Nentindo Switch lineup</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item dropdown-item-switch" href="#">
+                                    <div class="dropdown-item-icon dropdown-item-switch-icon">
+                                        <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                                    </div>
+                                    <p>Compare systems</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item dropdown-item-switch" href="#">
+                                    <div class="dropdown-item-icon dropdown-item-switch-icon">
+                                        <i class="fa-solid fa-gamepad"></i>
+                                        <p>ONLINE</p>
+                                    </div>
+                                    <p>Online service</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item dropdown-item-switch" href="#">
+                                    <div class="dropdown-item-icon dropdown-item-switch-icon">
+                                        <img src="procon.avif" alt="">
+                                    </div>
+                                    <p>Accessories</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item dropdown-item-switch" href="#">
+                                    <div class="dropdown-item-icon dropdown-item-switch-icon">
+                                        <img src="oled.avif" alt="">
+                                    </div>
+                                    <p>Shop systems</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="dropdown-play" class="dropdown-wrapper">
+                    <div class="dropdown-content">
+                        <div class="dropdown-title">
+                            <button class="dropdown-close">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </button>
+                            <div class="dropdown-title-border"></div>
+                        </div>
+                        <div class="dropdown-links-wrapper">
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item" href="#">
+                                    <div class="dropdown-item-icon">
+                                        <i class="fa-solid fa-children"></i>
+                                    </div>
+                                    <p>For kids</p>
+                                </a>
+                            </div>
+                            <div class="dropdown-links-col">
+                                <a class="dropdown-item" href="#">
+                                    <div class="dropdown-item-icon">
+                                        <i class="fa-solid fa-user-group"></i>
+                                    </div>
+                                    <p>For parents</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="store-notification">
+            <div class="store-notification-text">
+                <div class="store-notification-text-left">
+                    <i class="fa-solid fa-truck-arrow-right"></i>
+                    <p><b>Free shipping</b> on orders $50 or more.
+                        <a href="#">Restrictions apply</a>.
+                    </p>
+                </div>
+                <div class="store-notification-text-right">
+                    <i class="fa-solid fa-coins"></i>
+                    <p>Earn <a href="#">My Nentindo Points</a> on digital games</p>
+                </div>
+            </div>
+        </div>
+        <section class="section section-hero">
+            <div class="hero-container">
+                <div class="hero-header">
+                    <a href="#">Store</a><i class="fa-solid fa-chevron-right"></i><a href="#">Games</a><i
+                        class="fa-solid fa-chevron-right"></i>
+                    <p>Stardew Valley</p>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-section-left">
+                        <div class="carousel-container">
+                            <div class="carousel-img-large">
+                                <img src="stardew01.avif" alt="Stardew Valley" id="carousel-img-large">
+                            </div>
+                            <div class="carousel-img-gallery">
+                                <img src="stardew01.avif" alt="">
+                                <img src="stardew02.avif" alt="">
+                                <img src="stardew03.avif" alt="">
+                                <img src="stardew04.avif" alt="">
+                                <img src="stardew05.avif" alt="">
+                                <img src="stardew06.avif" alt="">
+                                <img src="stardew07.avif" alt="">
+                            </div>
+                        </div>
+                        <a href="#" class="esrb">
+                            <img class="esrb-img" src="esrb.png" alt="ESRB">
+                            <div class="esrb-text">
+                                <div class="esrb-keywords" href="#">
+                                    <p>Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling, Mild
+                                        Language, Mild Blood</p>
+                                    <p>Users Interact</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="hero-section-right">
+                        <p class="game-system">Nentindo Switch</p>
+                        <h2 class="game-title">Stardew Valley</h2>
+                        <h2 class="game-price">$14.99</h2>
+                        <p class="small-text"><i class="fa-solid fa-coins"></i> Eligible for up to <b>75</b> Gold
+                            Points</p>
+                        <button class="button-fancy-large"><span><i class="fa-solid fa-download"></i>Direct
+                                Download</span></button>
+                        <p class="small-text">This item will be sent to your system automatically after purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-product-info">
+            <div class="product-info-container">
+                <div class="product-info-left">
+                    <h3>You're moving to the valley...</h3>
+                    <p>You’ve inherited your grandfather’s old farm plot in Stardew Valley. Armed with hand-me-down
+                        tools and a few coins, you set out to begin your new life. Can you learn to live off the land
+                        and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja
+                        Corporation came to town, the old ways of life have all but disappeared. The community center,
+                        once the town’s most vibrant hub of activity, now lies in shambles. But the valley seems full of
+                        opportunity. With a little dedication, you might just be the one to restore Stardew Valley to
+                        greatness!
+                        <br>
+                        <br>
+                        Now with Multiplayer! Invite 1-3 players to join you in the valley! Players can work together to
+                        build a thriving farm, share resources, and build relationships with townspeople or each other.
+                        As more hands are better than one, players have the option to scale profit margin on produce
+                        sold for a more challenging experience.
+                    </p>
+                    <button class="read-more"><i class="fa-solid fa-plus"></i>Read more</button>
+                    <p class="small-text">Software description provided by the publisher.</p>
+                    <button class="button-fancy-large"><span>Explore this game's official website</span></button>
+                </div>
+                <div class="product-info-right">
+                    <img src="stardew01.avif" alt="Stardew Valley">
+                </div>
+            </div>
+        </section>
+        <section class="section section-about">
+            <div class="about-container">
+                <div class="about-section-top">
+                    <div class="about-item">
+                        <h3>ESRB rating</h3>
+                        <a href="#" class="esrb">
+                            <img class="esrb-img" src="esrb.png" alt="ESRB">
+                            <div class="esrb-text">
+                                <div class="esrb-keywords" href="#">
+                                    <p>Fantasy Violence, Use of Alcohol, Use of Tobacco, Simulated Gambling, Mild
+                                        Language, Mild Blood</p>
+                                    <p>Users Interact</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="about-item">
+                        <h3>Supported play modes</h3>
+                        <div class="play-modes-container">
+                            <div class="play-mode">
+                                <div class="play-mode-icon">
+                                    <i class="fa-solid fa-tv"></i>
+                                </div>
+                                <p>TV</p>
+                            </div>
+                            <div class="play-mode">
+                                <div class="play-mode-icon">
+                                    <i class="fa-regular fa-map"></i>
+                                </div>
+                                <p>Tabletop</p>
+                            </div>
+                            <div class="play-mode">
+                                <div class="play-mode-icon">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <p>Handheld</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-section-bottom">
+                    <ul class="about-details">
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <h4>Release date</h4>
+                            </span>
+                            <span class="about-details-right">
+                                October 5, 2017
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-solid fa-users"></i>
+                                <h4>No. of players</h4>
+                            </span>
+                            <span class="about-details-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Single System (1)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Local wireless (1)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Online (1-4)</a>
+                                    </li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-solid fa-up-down-left-right"></i>
+                                <h4>Genre</h4>
+                            </span>
+                            <span class="about-details-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Role-Playing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Simulation</a>
+                                    </li>
+                                </ul>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-solid fa-building"></i>
+                                <h4>Publisher</h4>
+                            </span>
+                            <span class="about-details-right">
+                                <a href="#">ConcernedApe</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-solid fa-gear"></i>
+                                <h4>ESRB rating</h4>
+                            </span>
+                            <span class="about-details-right">
+                                <a href="#">Everyone 10+</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-solid fa-pager"></i>
+                                <h4>Supported play modes</h4>
+                            </span>
+                            <span class="about-details-right">
+                                TV mode, Tabletop mode, Handheld mode
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-regular fa-hard-drive"></i>
+                                <h4>Game file size</h4>
+                            </span>
+                            <span class="about-details-right">
+                                1.5 GB
+                            </span>
+                        </li>
+                        <li>
+                            <span class="about-details-left">
+                                <i class="fa-solid fa-globe"></i>
+                                <h4>Supported languages</h4>
+                            </span>
+                            <span class="about-details-right">
+                                English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Simplified
+                                Chinese, Spanish, Traditional Chinese
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section section-online">
+            <div class="online-wrapper">
+                <div class="online-left">
+                    <div class="online-label">
+                        <i class="fa-solid fa-gamepad"></i>
+                        ONLINE
+                    </div>
+                    <p>Play online, access classic NES™ and Super NES™ games, and more with a Nentindo Switch Online
+                        membership.</p>
+                    <span class="supported-features">
+                        <p>This game supports:</p>
+                        <a href="#">Online Play</a>
+                        <a href="#">Save Data Cloud</a>
+                    </span>
+                    <button class="button-fancy-large"><span>Learn more</span></button>
+                </div>
+                <div class="online-right">
+                    <img src="controllerhands.avif" alt="Hands holding a Nentindo Pro controller">
+                </div>
+            </div>
+        </section>
+        <section class="section section-more-like-this">
+            <div class="more-like-this-wrapper">
+                <h2>More like this</h2>
+                <div class="slider-container">
+                    <div class="more-like-this-slider">
+                        <a href="#" class="slider-card">
+                            <img src="portia.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">My Time at Portia</h4>
+                                <p class="slider-game-release-date">04/16/2019</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$29.99</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="slider-card">
+                            <img src="moonlighter.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">Moonlighter</h4>
+                                <p class="slider-game-release-date">11/05/2018</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$3.74</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="slider-card">
+                            <img src="animacrossing.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">Animal Crossing&trade;: New Horizons</h4>
+                                <p class="slider-game-release-date">03/20/2020</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$59.99</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="slider-card">
+                            <img src="cozygrove.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">Cozy Grove</h4>
+                                <p class="slider-game-release-date">04/08/2021</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$8.81</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="slider-card">
+                            <img src="portia.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">My Time at Portia</h4>
+                                <p class="slider-game-release-date">04/16/2019</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$29.99</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="slider-card">
+                            <img src="moonlighter.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">Moonlighter</h4>
+                                <p class="slider-game-release-date">11/05/2018</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$3.74</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="slider-card">
+                            <img src="animacrossing.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">Animal Crossing&trade;: New Horizons</h4>
+                                <p class="slider-game-release-date">03/20/2020</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$59.99</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+                        <a href="#" class="slider-card">
+                            <img src="cozygrove.avif" alt="Game image" class="slider-img">
+                            <div class="slider-text">
+                                <h4 class="slider-game-title">Cozy Grove</h4>
+                                <p class="slider-game-release-date">04/08/2021</p>
+                                <div class="on-sale-tag"></div>
+                                <span class="pricing">
+                                    <h4 class="slider-game-price">$8.81</h4>
+                                    <p class="old-price"></p>
+                                    <div class="percent-off-tag"></div>
+                                </span>
+                                <p class="game-system">Nentindo Switch</p>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-scroll-left">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button class="slider-scroll-right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-warnings">
+            <div class="warnings-content">
+                <p>WARNING: If you have epilepsy or have had seizures or other unusual reactions to flashing lights or
+                    patterns, consult a doctor before playing video games. All users should read the Health and Safety
+                    Information available in the system settings before using this software.</p>
+                <p>Nentindo Switch Online membership (sold separately) and Nentindo Account required for online play.
+                    Not available in all countries. Internet access required for online features. Terms apply. <a
+                        href="#">Nentindo.com/switch-online</a></p>
+                <p>Stardew Valley © ConcernedApe LLC 2016-2020. All rights reserved.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section id="footer-heading">
+            <div class="footer-logo">
+                <h1>Nentindo</h1>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
+        <section id="footer-links">
+            <div class="links">
+                <div class="link-set">
+                    <h2><a href="#">About Nentindo</a></h2>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Corporate Social Responsibility</a></li>
+                    </ul>
+                </div>
+                <div class="link-set">
+                    <h2><a href="#">Shop</a></h2>
+                    <ul>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Hardware</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Sales & deals</a></li>
+                        <li><a href="#">Exclusives</a></li>
+                        <li><a href="#">Online service</a></li>
+                        <li><a href="#">Nentindo NY store</a></li>
+                    </ul>
+                </div>
+                <div class="link-set">
+                    <h2><a href="#">My Nentindo Store orders</a></h2>
+                    <ul>
+                        <li><a href="#">Order details</a></li>
+                        <li><a href="#">Shipping info</a></li>
+                        <li><a href="#">Returns & exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="link-set">
+                    <h2><a href="#">Support</a></h2>
+                    <ul>
+                        <li><a href="#">Nentindo Switch</a></li>
+                        <li><a href="#">Nentindo Account</a></li>
+                        <li><a href="#">Other systems</a></li>
+                        <li><a href="#">Repairs</a></li>
+                        <li><a href="#">Nentindo product recycling</a></li>
+                    </ul>
+                </div>
+                <div class="link-set">
+                    <h2><a href="#">Parents</a></h2>
+                    <ul>
+                        <li><a href="#">Info for parents</a></li>
+                        <li><a href="#">Parental controls</a></li>
+                    </ul>
+                </div>
+                <div class="link-set">
+                    <h2><a href="#">Community</a></h2>
+                    <ul>
+                        <li><a href="#">Community guidelines</a></li>
+                        <li><a href="#">Online safety principles</a></li>
+                    </ul>
+                </div>
+                <div class="link-set">
+                    <h2><a href="#">Privacy</a></h2>
+                    <ul>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookies and interest-based ads</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-esrb">
+                <img src="esrb.png" alt="ESRB logo" class="footer-esrb-logo">
+            </div>
+        </section>
+        <section class="copyright">
+            <div class="copyright-content">
+                <p>© Nentindo. Games are property of their respective owners. Nentindo of America Inc. Headquarters are
+                    in Redmond, Washington, USA</p>
+                <div class="copyright-content-links">
+                    <a href="#">Contact us</a>
+                    <a href="#">Website feedback</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Documents & Policies</a>
+                </div>
+                <a href="#" class="region"><img src="FlagUsaIcon.webp" alt="USA flag icon"><span>Change
+                        region</span></a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
